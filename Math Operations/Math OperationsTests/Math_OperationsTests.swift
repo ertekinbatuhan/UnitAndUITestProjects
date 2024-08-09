@@ -10,7 +10,6 @@ import XCTest
 
 final class Math_OperationsTests: XCTestCase {
 
-    
     var mathOperations: MathOperations!
     
     override func setUpWithError() throws {
@@ -21,7 +20,6 @@ final class Math_OperationsTests: XCTestCase {
         mathOperations = nil
     }
 
-   
     func testAddition() {
           let result = mathOperations.add(number1: 3, number2: 5)
           XCTAssertEqual(result, 8)
@@ -46,12 +44,6 @@ final class Math_OperationsTests: XCTestCase {
           let result = mathOperations.divide(number1: 10, number2: 0)
           XCTAssertEqual(result, 0)
       }
-    
-
-    
-    
-    
-    
     
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
